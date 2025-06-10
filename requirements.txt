@@ -1,0 +1,30 @@
+# Core
+numpy
+pandas
+scikit-learn
+matplotlib
+seaborn
+
+# Deep Learning
+torch             # or tensorflow, depending on what you used
+torchtext         # if using PyTorch for NLP
+tensorflow        # if using TensorFlow models
+
+# For gensim Word2Vec Training
+gensim
+
+# For BiLSTM + CRF
+seqeval
+sklearn-crfsuite  # if using CRF
+
+# Transformers (BERT)
+transformers
+
+
+# Preprocessing
+nltk
+spacy
+
+# Utilities
+pyyaml            # for config.yaml
+jupyter
