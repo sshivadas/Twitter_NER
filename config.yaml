@@ -2,8 +2,6 @@
 
 # === General Settings ===
 seed: 42
-device: "cuda"  # or "cpu"
-model_type: "bilstm-crf"  # options: "bilstm-crf", "bert", "gensim"
 
 # === Data Parameters ===
 data:
@@ -21,7 +19,6 @@ bilstm_crf:
   hidden_dim: 256
   dropout: 0.5
   use_pretrained_embeddings: true
-  embeddings_path: "models/word2vec.bin"  # Only if use_pretrained_embeddings is true
   bidirectional: true
 
 # === Model: BERT ===
@@ -54,11 +51,10 @@ training:
 
 # === Evaluation ===
 evaluation:
-  eval_batch_size: 64
   metrics: ["precision", "recall", "f1"]
 
 # === Output Directories ===
 output:
   model_dir: "models/"
   log_dir: "logs/"
-  predictions_file: "outputs/predictions.csv"
+  
